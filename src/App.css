@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f0f4f8; /* Light background color for a fresh look */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #333;
+  font-weight: 600; /* Bolder font for headers */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.btn-success {
+  margin-top: 20px;
+  background-color: #28a745; /* Green color */
+  border: none; /* Remove border */
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.badge {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 12px; /* More rounded corners */
   color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
 }
 
-.App-link {
-  color: #61dafb;
+.badge-active {
+  background-color: #4caf50; /* Active status color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.badge-inactive {
+  background-color: #f44336; /* Inactive status color */
+}
+
+.badge:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
