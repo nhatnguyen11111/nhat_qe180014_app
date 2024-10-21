@@ -53,9 +53,9 @@ function App() {
   };
 
   return (
-    <Container className="mt-5">
+    <Container className="">
       <Row>
-        <Col>
+        <Col className="bg-info">
           <h2>
             Total Selected Students:{" "}
             {students.filter((s) => s.selected).length}
